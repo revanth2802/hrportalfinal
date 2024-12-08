@@ -1,0 +1,66 @@
+/* Department Performance Container */
+.department-performance {
+    display: flex;
+    flex-direction: column; /* Adjusted the flex direction to column */
+    flex-wrap: wrap; /* Allow content to wrap if needed */
+    justify-content: center; /* Center content along the main axis */
+    align-items: center; /* Center content along the cross-axis */
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px auto; /* Centering the component horizontally */
+    max-width: 800px;
+}
+
+.department-performance img {
+    width: 80%; /* Adjust image width */
+    max-width: 700px; /* Maximum width for the image */
+    height: auto;
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.department-performance p {
+    font-size: 1.1em;
+    color: #555; /* Muted color for text */
+    text-align: center;
+}
+
+/* Title Styles */
+.department-performance-title {
+    font-size: 2em;
+    color: #333; 
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Department Total Salary and Subtitle */
+.department-total-salary, .department-subtitle {
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Chart Container Styles */
+.chart-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    max-width: 780px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 48%; /* Adjusted width */
+    overflow: hidden;
+}
+
+/* Ensure charts take full width */
+.chart-container .average-salaries-chart, 
+.chart-container .distribution-chart {
+    width: 100% !important; /* Force charts to take full width */
+}
+
+/* .average-salaries-chart and .distribution-chart can have specific styling if needed */

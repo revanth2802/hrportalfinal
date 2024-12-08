@@ -1,0 +1,47 @@
+/* EmployeeForm.css */
+.employee-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+}
+
+.employee-form input[type="text"],
+.employee-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+}
+
+.employee-form button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.employee-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.employee-form button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.employee-form button[type="button"]:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,32 @@
+.employee-breakdown {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.employee-breakdown select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.employee-breakdown ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.employee-breakdown li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.employee-breakdown li:last-child {
+    border-bottom: none;
+}

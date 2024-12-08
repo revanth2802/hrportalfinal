@@ -1,0 +1,70 @@
+# This script sets up and activates a virtual environment.
+# Note: Use "source bin/activate" from bash; do not execute this file directly.
+
+exit_virtual_env() {
+    # Restore original environment variables if they were saved
+    if [ -n "${PREV_PATH:-}" ]; then
+        PATH="${PREV_PATH}"
+        export PATH
+        unset PREV_PATH
+    fi
+
+    if [ -n "${PREV_PYTHON_HOME:-}" ]; then
+        PYTHONHOME="${PREV_PYTHON_HOME}"
+        export PYTHONHOME
+        unset PREV_PYTHON_HOME
+    fi
+
+    # Refresh the command hash table for bash or zsh, if applicable
+    if [ -n "${BASH:-}" ] || [ -n "${ZSH_VERSION:-}" ]; then
+        hash -r 2> /dev/null
+    fi
+
+    # Restore the previous PS1 prompt if it was modified
+    if [ -n "${PREV_PS1:-}" ]; then
+        PS1="${PREV_PS1}"
+        export PS1
+        unset PREV_PS1
+    fi
+
+    # Clean up environment variables
+    unset VIRTUAL_ENV
+    unset ENV_PROMPT
+
+    # Optionally self-destruct the function
+    if [ "${1:-}" != "persistent" ]; then
+        unset -f exit_virtual_env
+    fi
+}
+
+# Clear old environment variables if any
+exit_virtual_env persistent
+
+# Define and export the path to the virtual environment
+VIRTUAL_ENV="C:\Users\joash\Desktop\Hr_portal_final\hr_portal\hr_portal_env"
+export VIRTUAL_ENV
+
+# Backup the current PATH and modify it for the virtual environment
+PREV_PATH="$PATH"
+PATH="$VIRTUAL_ENV/Scripts:$PATH"
+export PATH
+
+# Unset PYTHONHOME if it exists to avoid conflicts
+if [ -n "${PYTHONHOME:-}" ]; then
+    PREV_PYTHON_HOME="${PYTHONHOME}"
+    unset PYTHONHOME
+fi
+
+# Update the shell prompt to indicate the virtual environment
+if [ -z "${DISABLE_ENV_PROMPT:-}" ]; then
+    PREV_PS1="${PS1:-}"
+    ENV_PROMPT="(hr_portal_env)"
+    PS1="${ENV_PROMPT} ${PS1:-}"
+    export PS1
+    export ENV_PROMPT
+fi
+
+# Refresh the command hash table for shell compatibility
+if [ -n "${BASH:-}" ] || [ -n "${ZSH_VERSION:-}" ]; then
+    hash -r 2> /dev/null
+fi

@@ -1,0 +1,55 @@
+/* Container Styles */
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fafafa; /* Slightly different light gray */
+    border-radius: 8px;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    color: #444; /* Slightly darker color for better contrast */
+    margin-bottom: 20px;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px; /* Adjusted gap for better spacing */
+    margin-top: 20px;
+}
+
+/* Search Bar Styling */
+.search-container {
+    width: 100%;
+    padding: 0;
+}
+
+.search-container input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px; /* Slightly increased padding for better visual balance */
+    border-radius: 5px; /* Slightly larger radius for smoother edges */
+    border: 1px solid #d1d1d1; /* Lighter border color */
+    font-size: 1.1em;
+}
+
+/* New Employee Button Styling */
+.new-employee-btn {
+    display: inline-block;
+    width: 200px; 
+    padding: 12px 22px; /* Adjusted padding for better button height */
+    font-size: 1.2em;
+    margin-top: 6px; /* Small adjustment for consistent spacing */
+    background-color: #34d058; /* Different shade of green */
+    border: none;
+    text-align: center;
+    cursor: pointer; /* Added cursor pointer to indicate clickable area */
+}
+
+/* Button Hover Effect */
+.new-employee-btn:hover {
+    background-color: #218838; /* Keep the hover color consistent */
+}

@@ -1,0 +1,64 @@
+/* SideBar.css */
+
+.sidebar {
+    /* Styles for the sidebar itself */
+   
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 20px; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    overflow-y: auto; 
+    height: 100%; /* Full height */
+  }
+  
+  .nav-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .nav-item {
+    margin-bottom: 10px; /* Space between the items */
+  }
+  
+  .nav-item a {
+    text-decoration: none; /* No underline for links */
+    color: #333; /* Dark text color for contrast */
+    display: block; /* Make the links fill the container */
+    padding: 10px; /* Padding for clickability and spacing */
+  }
+  
+  .active-link {
+    background-color: #007bff; /* Highlight color for the active link */
+    color: white; 
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%; 
+      padding: 10px; /* Adjust padding for smaller screens */
+      box-shadow: none; /* Remove shadow on smaller screens */
+    }
+  
+    .nav-item {
+      display: inline-block; /* Side by side on smaller screens */
+    }
+  }
+
+  .nav-item a {
+    text-decoration: none; /* No underline for links */
+    color: white; 
+    display: block; /* Make the links fill the container */
+    padding: 10px; /* Padding for clickability and spacing */
+    background-color: #1d5b9d; /* Blue background color */
+    border-radius: 5px; /* Rounded corners for a button-like appearance */
+    text-align: center; /* Center the text inside the button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-item a:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+    color: #fff; /* Maintain white text on hover */
+  }
+  
+  

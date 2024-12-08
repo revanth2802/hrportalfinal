@@ -1,0 +1,55 @@
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #d3d3d3;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    text-align: left;
+}
+
+th {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Button Styling */
+button, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Ensures no underline on .btn links styled as buttons */
+}
+
+button:hover, .btn:hover {
+    background-color: #004080;
+}
+
+button:disabled, .btn:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+button.btn, .btn {
+    margin-right: 6px;
+    width: 80px;         /* Adjusted width */
+    height: 36px;        /* Adjusted height */
+    display: inline-block; /* Ensures block-like behavior */
+    line-height: 1.3;      /* Fine-tune vertical alignment */
+    padding: 6px 12px;     /* Adjusted padding */
+    box-sizing: border-box; /* Includes padding and border in width/height calculation */
+    text-align: center;
+}

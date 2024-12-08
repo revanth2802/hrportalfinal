@@ -1,0 +1,38 @@
+/* Document List Styles */
+.document-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.document-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; /* Align items with space between them */
+  align-items: center; /* Vertically center items */
+}
+
+/* Title of the document */
+.document-title {
+  flex-grow: 1; /* Allow title to take remaining space */
+  margin-right: 20px;
+  word-wrap: break-word; /* Ensure long words break to the next line */
+  color: #0645ad; /* Color for the document link */
+  text-decoration: none; /* No underline by default */
+  cursor: pointer; /* Change cursor to pointer when hovering */
+}
+
+/* Hover effect for document title */
+.document-title:hover {
+  text-decoration: underline; /* Underline when hovering for feedback */
+}
+
+/* Delete button styles */
+.delete-button {
+  padding: 5px 10px;
+  background-color: #f44336; /* Red background for delete button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Cursor indicates it's clickable */
+}

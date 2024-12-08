@@ -1,0 +1,25 @@
+/* EmployeeDetails.css */
+.details-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    margin-top: 20px;
+}
+
+h3 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+strong {
+    font-weight: bold;
+    margin-right: 10px;
+}

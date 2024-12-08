@@ -1,0 +1,148 @@
+/* Main container styling */
+.home-container {
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Styling for the header */
+.home-header {
+  margin: 50px auto;
+  background-color: #f9f9f9;
+}
+
+.home-header h1 {
+  font-size: 36px;
+}
+
+.home-header p {
+  font-size: 18px;
+}
+
+/* Styling for the top image */
+.top-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Layout for main sections */
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.section {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.section h2 {
+  font-size: 26px;
+  color: #2d87f0;
+  margin-bottom: 12px;
+}
+
+.section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Button styles */
+.action-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: #2d87f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #1a5db0;
+}
+
+/* Image gallery styling */
+.image-gallery-section {
+  margin: 40px 0;
+}
+
+.image-gallery-section h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image-box {
+  width: 23%; /* Ensuring 4 images fit in one row */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image-box:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Footer styles */
+.home-footer {
+  margin: 50px 0;
+  font-size: 14px;
+  color: #636e72;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .image-box {
+    width: 48%; /* Display two images per row on smaller screens */
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .home-header h1 {
+    font-size: 28px;
+  }
+
+  .home-header p {
+    font-size: 16px;
+  }
+
+  .top-image {
+    max-height: 300px;
+  }
+}

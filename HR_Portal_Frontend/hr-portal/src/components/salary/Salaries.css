@@ -1,0 +1,39 @@
+.salaries-container {
+    padding: 20px;
+    background-color: #f7f7f7;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+
+/* Salaries.css or a global CSS file if you want these styles across your app */
+button {
+    background-color: #007BFF; 
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    border: none; /* Removes default borders */
+    border-radius: 4px; /* Rounds the corners */
+    cursor: pointer; /* Indicates an action can be taken */
+    transition: background-color 0.3s; /* Transition for a smooth color change */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade of the primary color for hover effect */
+}
+
+button:disabled {
+    background-color: #ccc; /* Gray color for disabled buttons */
+    cursor: not-allowed; /* Indicates no action can be taken */
+}
+
+
+
+button:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 10px; 
+}
+
+
+

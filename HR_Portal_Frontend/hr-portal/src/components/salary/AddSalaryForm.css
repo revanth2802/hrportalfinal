@@ -1,0 +1,43 @@
+/* For both Add and Edit forms */
+.salary-form {
+    margin-top: 20px;
+}
+
+.salary-form input, .salary-form select {
+    width: 100%; /* Ensures full width of input/select */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.salary-form button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue button background */
+    color: white;
+    border: none;
+    cursor: pointer; /* Pointer cursor to indicate button */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.salary-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* For AddSalaryForm.css and EditSalaryModal.css */
+.input-group {
+    margin-bottom: 20px; /* Adds space between form elements */
+}
+
+label {
+    display: block; /* Ensures label takes full width */
+    margin-bottom: 8px; /* Adds space below label */
+}
+
+input {
+    width: 100%; /* Full width for the input */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for the input field */
+}

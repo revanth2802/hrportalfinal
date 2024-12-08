@@ -1,0 +1,119 @@
+# Environment settings and configurations
+.env
+.local_settings.py
+
+# Compiled Python files and caches
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.py,cover
+
+# Python packages and distributions
+*.egg
+*.egg-info/
+.eggs/
+wheels/
+dist/
+downloads/
+lib/
+lib64/
+parts/
+sdist/
+Develop/
+build/
+pip-wheel-metadata/
+share/python-wheels/
+.installed.cfg
+
+# Logs and temporary files
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python extensions and shared objects
+*.so
+
+# PyInstaller-related
+*.manifest
+*.spec
+
+# Test and coverage reports
+.htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.cover
+.pytest_cache/
+nosetests.xml
+coverage.xml
+.hypothesis/
+
+# Type checker files
+.pyre/
+.pytype/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Static type analyzer and debugging
+cython_debug/
+cython_debug/
+
+# Flask-related
+instance/
+.webassets-cache
+
+# Django-related
+db.sqlite3
+db.sqlite3-journal
+
+# Sphinx documentation
+docs/_build/
+
+# Scrapy projects
+.scrapy
+
+# PyBuilder
+target/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# IDE and editor-specific files
+.idea/  # JetBrains
+.vscode/  # VS Code
+
+# Certificates and security files
+*.pem
+
+# mkdocs site
+/site
+
+# Python environment directories
+ENV/
+env/
+.venv/
+venv/
+.Python
+
+# Rope project
+.ropeproject
+
+# SageMath
+*.sage.py
+
+# Celery beat
+celerybeat-schedule
+
+# Pyenv
+.python-version
+
+# Spyder IDE
+.spyderproject
+.spyproject
+
+# Comment: Ensures clean build directories and ignores all generated files.

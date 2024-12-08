@@ -1,0 +1,12 @@
+.department-overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1200px;
+}
+
+.department-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}

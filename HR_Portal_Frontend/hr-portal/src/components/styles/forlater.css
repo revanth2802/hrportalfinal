@@ -1,0 +1,64 @@
+
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;   /* ensures the container takes up the whole viewport height */
+    align-items: center; /* centers children horizontally */
+    justify-content: space-between; /* centers children vertically with space between */
+    background-color: #f2f2f2; /* for a light gray background */
+  }
+  
+  .container {
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    flex: 1;   /* allows the container to grow and take up available space */
+    width: 100%; /* makes sure it takes up the full width of its parent up to max-width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* adds some spacing inside the container */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif; 
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4; 
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #aaa; 
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+  }
+  
+  
+  .app-container > :nth-child(2) {
+    flex: 1; /* This ensures the content stretches to fill the space */
+    padding: 20px; /* Padding for content */
+    overflow-y: auto; /* To scroll if content overflows */
+    background-color: #fff; /* white background */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }

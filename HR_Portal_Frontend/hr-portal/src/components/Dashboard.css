@@ -1,0 +1,141 @@
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center horizontally */
+    box-sizing: border-box; /* Include padding and border in total width */
+}
+
+.common-width-container {
+    max-width: 100%; /* Prevent overflow from parent */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.dashboard-metrics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.dashboard-metrics p {
+    flex-basis: calc(25% - 10px); /* Ensure proper spacing on medium screens */
+    margin: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Allow wrapping */
+    margin: 20px 0 40px;
+}
+
+.navigation-links a,
+.navigation-links a:hover {
+    margin: 5px 15px; /* Add space around links */
+    text-decoration: none;
+    color: #007BFF;
+    padding: 10px 15px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s ease-in-out;
+}
+
+.dashboard-charts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Wrap items to avoid overflow */
+}
+
+.chart-section {
+    flex: 1;
+    margin: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-width: 200px; /* Prevent charts from shrinking too much */
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.dashboard-metrics p:nth-child(1) {
+    color: #E57373; /* Red metric */
+}
+
+.dashboard-metrics p:nth-child(2) {
+    color: #81C784; /* Green metric */
+}
+
+.dashboard-metrics p:nth-child(3) {
+    color: #64B5F6; /* Blue metric */
+}
+
+.dashboard-metrics p:nth-child(4) {
+    color: #FFD54F; /* Yellow metric */
+}
+
+.chart-section {
+    flex: 1 1 30%; /* Flexible sizing */
+    margin: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-height: 300px; /* Minimum height for consistency */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space evenly between charts */
+    align-items: flex-start;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chart-section {
+        flex: 1 1 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-metrics p {
+        flex-basis: 100%; /* Full width on small screens */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation-links a {
+        flex-basis: 100%; /* Stretch links on smaller screens */
+        margin: 10px 0; /* Adjust spacing for readability */
+        padding: 12px 20px; /* Increase padding for better touch targets */
+    }
+}
